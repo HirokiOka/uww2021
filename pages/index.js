@@ -1,34 +1,31 @@
-import Link from 'next/link';
+import Header from '../components/header';
+import Registration from '../components/registration';
+import Deadline from '../components/deadline';
+import Schedule from '../components/schedule';
+import Organizers from '../components/organizers';
+import Footer from '../components/footer';
+import About from '../components/about';
 
-const Index = () => (
-  <div>
-    <header>
-      <nav>
-        <Link href="/"><a>Home</a></Link>
-        <Link href="/access"><a>Access</a></Link>
-        <Link href="/program"><a>Program</a></Link>
-      </nav>
-    </header>
-    <h1>Ubiquitous Wearable Workshop 2021</h1>
-    <p>2021年某日開催</p>
-    <p>@神戸大学百年記念館 六甲ホール</p>
-    <p>〒657-8501 兵庫県神戸市灘区六甲台町1-1</p>
-    <h2>Welcome to UWW2021</h2>
-    <p>ユビキタス・ウェアラブル技術の発展はめざましく、これらの技術に関する研究開発が活発に行われています。神戸大学塚本・寺田研究室およびNPO法人ウェアラブルコンピュータ研究開発機構では、ユビキタス・ウェアラブルワークショップを2007年以来毎年開催し、今年は15回目となります。昨年はユビキタス・ウェアラブル技術に関する70件の密度の濃い発表と議論を行いました。</p>
+export default function Home() {
+  return (
+    <div className='bg-gray-900 h-full text-gray-200 sans'>
+      <head>
+      </head>
+      <body>
+        <Header />
 
-    <p>これまで現地での開催を行ってきましたが、本年度は新型コロナウイルス (SARS-CoV-2) の状況を踏まえまして、オンライン開催、もしくは、オンラインとオフラインのハイブリッド開催を予定しております。下記の通りの企画をしておりますので、是非ご参加いただけますようお願い致します。</p>
+        <div className='contents'>
+          <About />
+          <Registration />
+          <div className='grid grid-cols-2 p-2'>
+            <Deadline />
+            <Schedule />
+            <Organizers />
+          </div>
 
-    <ul>本ワークショップの特色は以下の通りです．
-      <li>A4原稿1枚記述</li>
-      <li>一人15分程度のショートプレゼンテーション</li>
-      <li>参加者間の交流を目指したワークショップ</li>
-      <li>実践的な情報処理技術に関する特別な企画などを含んだ「ナイトセッション」</li>
-    </ul>
-    <footer>
-      <p>© Tsukamoto Terada Lab.</p>
-    </footer>
-  </div>
-
-);
-
-export default Index;
+        </div>
+      </body>
+      <Footer />
+      </div>
+  )
+}
