@@ -7,7 +7,7 @@ export default function About() {
       <p className='text-center'>〒656-2306 兵庫県淡路市夢舞台1番地</p>
       <div className='p-2'>
         <h2 className='text-4xl text-center py-2 underline '>Welcome to UWW2021</h2>
-        <div className='bg-gray-600 rounded mx-3 p-3'>
+        <div className='bg-gray-700 rounded mx-3 p-3'>
           <p>ユビキタス・ウェアラブル技術の発展はめざましく、これらの技術に関する研究開発が活発に行われています。神戸大学塚本・寺田研究室およびNPO法人ウェアラブルコンピュータ研究開発機構では、ユビキタス・ウェアラブルワークショップを2007年以来毎年開催し、今年は15回目となります。</p>
           <p>2020年度はオンラインでの開催を行いましたが、2021年度は現地開催を予定しております。下記の通りの企画をしておりますので、是非ご参加いただけますようお願い致します。</p>
           <p>※新型コロナウイルス (SARS-CoV-2) の状況によって、完全オンラインでの開催となる可能性もあります。</p>

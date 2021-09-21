@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div className='font-display bg-gray-800 h-full text-gray-300 font-sans'>
+    <div className='bg-gray-900 h-full text-gray-300 font-sans'>
       <Head>
         <title>UWW2021</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />

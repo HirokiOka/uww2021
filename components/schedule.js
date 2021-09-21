@@ -27,7 +27,7 @@ export default function Schedule() {
   return (
     <div className='p-2 m-3'>
       <h2 className='text-3xl underline mx-2 py-2'>Schedule</h2>
-      <div className='rounded p-2 bg-gray-600'>
+      <div className='rounded p-2 bg-gray-700'>
         <h3 className='text-xl font-bold'>12月19日(日)</h3>
         <table className='table-auto mx-3 text-center mb-3'>
           {dayOneSchedule.map((v, i) => (

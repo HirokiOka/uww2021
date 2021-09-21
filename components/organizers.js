@@ -34,7 +34,7 @@ export default function Organizers() {
   return (
     <div className='p-2 m-3'>
       <h2 className='text-3xl underline mx-2 py-2'>Organizers</h2>
-      <div className='rounded bg-gray-600 p-3'>
+      <div className='rounded bg-gray-700 p-3'>
         <table className='table-auto mx-3 border text-center '>
           {organizersList.map((v, i) => (
             <tr key={i}>
