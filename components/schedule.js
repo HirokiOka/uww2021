@@ -30,8 +30,8 @@ export default function Schedule() {
       <div className='rounded p-2 bg-gray-600'>
         <h3 className='text-xl'>12月19日（日）</h3>
         <table className='table-auto mx-3 border text-center mb-4'>
-          {dayOneSchedule.map((v, _i) => (
-                <tr>
+          {dayOneSchedule.map((v, i) => (
+                <tr key={i}>
                   <td className='border px-3'>{v.event}</td>
                   <td className='border px-3'>{v.time}</td>
                 </tr>
@@ -41,8 +41,8 @@ export default function Schedule() {
       <div className='rounded p-2 bg-gray-600'>
         <h3 className='text-xl'>12月20日（月）</h3>
         <table className='table-auto mx-3 border text-center mb-4'>
-          {dayTwoSchedule.map((v, _i) => (
-                <tr>
+          {dayTwoSchedule.map((v, i) => (
+                <tr key={i}>
                   <td className='border px-3'>{v.event}</td>
                   <td className='border px-3'>{v.time}</td>
                 </tr>

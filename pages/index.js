@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from '../components/header';
 import Registration from '../components/registration';
 import Deadline from '../components/deadline';
@@ -11,9 +12,10 @@ import Footer from '../components/footer';
 export default function Home() {
   return (
     <div className='font-display bg-gray-800 h-full text-gray-200'>
-      <head>
+      <Head>
         <title>UWW2021</title>
-      </head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <body>
         <Header />
 
