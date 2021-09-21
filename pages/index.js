@@ -10,8 +10,9 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div className='bg-gray-900 h-full text-gray-200 font-mono'>
+    <div className='font-display bg-gray-800 h-full text-gray-200'>
       <head>
+        <title>UWW2021</title>
       </head>
       <body>
         <Header />
@@ -20,7 +21,7 @@ export default function Home() {
           <About />
           <Registration />
           <Deadline />
-          <div className='grid grid-cols-2 p-2'>
+          <div className='grid md:grid-cols-2 sm:grid-cols-none p-2'>
             <Schedule />
             <Organizers />
           </div>

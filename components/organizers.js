@@ -38,7 +38,7 @@ export default function Organizers() {
           </tr>
           <tr>
             <td>広報(Webページ・デザイン)</td>
-            <td>清水友順（神戸大）,岡 大貴（神戸大）</td>
+            <td>清水友順（神戸大）、岡 大貴（神戸大）</td>
           </tr>
           <tr>
             <td>ローカル</td>
