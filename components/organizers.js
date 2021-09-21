@@ -22,11 +22,11 @@ export default function Organizers() {
           </tr>
           <tr>
             <td>会計</td>
-            <td>上田健太郎（神戸大）</td>
+            <td>土田修平（神戸大）</td>
           </tr>
           <tr>
             <td>Webシステム</td>
-            <td>土田修平（神戸大）</td>
+            <td>毛 昊珉（神戸大）</td>
           </tr>
           <tr>
             <td>プログラム</td>
@@ -38,10 +38,10 @@ export default function Organizers() {
           </tr>
           <tr>
             <td>広報(Webページ・デザイン)</td>
-            <td>清水友順（神戸大）</td>
+            <td>清水友順（神戸大）,岡 大貴（神戸大）</td>
           </tr>
           <tr>
-            <td>ローカル・ナイトセッション</td>
+            <td>ローカル</td>
             <td>大西鮎美（神戸大）</td>
           </tr>
         </table>
