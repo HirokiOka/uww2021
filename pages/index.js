@@ -11,10 +11,11 @@ import Footer from '../components/footer';
 
 export default function Home() {
   return (
-    <div className='font-display bg-gray-800 h-full text-gray-200'>
+    <div className='font-display bg-gray-800 h-full text-gray-300 font-sans'>
       <Head>
         <title>UWW2021</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Header />
@@ -23,7 +24,7 @@ export default function Home() {
           <About />
           <Registration />
           <Deadline />
-          <div className='grid md:grid-cols-2 sm:grid-cols-none p-2'>
+          <div className='grid md:grid-cols-2 sm:grid-cols-none '>
             <Schedule />
             <Organizers />
           </div>

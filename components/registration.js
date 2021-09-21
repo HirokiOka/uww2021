@@ -1,6 +1,6 @@
 export default function Registration() {
   return (
-    <div className='p-2'>
+    <div className='p-2 m-2'>
       <h2 className='text-3xl underline mx-4 py-1'>Registration</h2>
       <div className=' bg-gray-600 rounded m-2 p-3'>
         <p className='text-xl px-2'>参加費：TBD</p>

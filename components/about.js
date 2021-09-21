@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <div>
-      <h1 className='text-6xl text-center pt-16'>Ubiquitous Wearable Workshop 2021</h1>
-      <p className='text-center'>2021年12月19日（日）～20日（月）</p>
+      <h1 className='text-6xl text-center pt-16 py-2'>Ubiquitous Wearable Workshop 2021</h1>
+      <p className='text-center'>2021年12月19日(日)～20日(月)</p>
       <p className='text-center'>@兵庫県立 淡路夢舞台国際会議場</p>
       <p className='text-center'>〒656-2306 兵庫県淡路市夢舞台1番地</p>
       <div className='p-2'>
@@ -12,7 +12,7 @@ export default function About() {
           <p>2020年度はオンラインでの開催を行いましたが、2021年度は現地開催を予定しております。下記の通りの企画をしておりますので、是非ご参加いただけますようお願い致します。</p>
           <p>※新型コロナウイルス (SARS-CoV-2) の状況によって、完全オンラインでの開催となる可能性もあります。</p>
           <p>本ワークショップの特色は以下の通りです。</p>
-          <ul className='list-disc list-inside mx-3 px-3 bg-gray-500 rounded'>
+          <ul className='list-disc list-inside mx-3 p-3 bg-gray-500 rounded'>
             <li>A4原稿1枚記述</li>
             <li>一人15分程度のショートプレゼンテーション</li>
             <li>参加者間の交流を目指したワークショップ</li>
