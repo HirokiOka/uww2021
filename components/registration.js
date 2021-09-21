@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Registration() {
   return (
     <div className='p-2 m-2'>
@@ -12,6 +14,7 @@ export default function Registration() {
           <li>宿泊せずに懇親会に参加される方は、懇親会費5,000円を頂戴致します。</li>
           <li>参加費は1日のみの参加の場合でも減額は致しませんので、ご了承下さい。</li> */}
         </ul>
+        <button className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4 mx-8"><a href="http://cse.eedept.kobe-u.ac.jp/uww2021/reg/" className=''>参加登録する</a></button>
       </div>
     </div>
   );

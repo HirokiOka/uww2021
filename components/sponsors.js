@@ -8,11 +8,11 @@ export default function Sponsors() {
       <h1 className='text-3xl underline mx-3'>Sponsors</h1>
       <div className='m-3 grid grid-cols-2'>
         <div className='text-center bg-gray-500 rounded p-3'>
-          <h2 className='text-xl pb-2'>神戸大学大学院工学研究科 塚本・寺田研究室</h2>
+          <h2 className='text-xl font-bold pb-2'>神戸大学大学院工学研究科 塚本・寺田研究室</h2>
           <Image src={tsukakenLogo} alt="塚本寺田研究室ロゴ" />
         </div>
         <div className='text-center bg-gray-600 rounded p-3'>
-          <h2 className='text-xl py-2'>NPO法人ウェアラブルコンピュータ研究開発機構</h2>
+          <h2 className='text-xl font-bold py-2'>NPO法人ウェアラブルコンピュータ研究開発機構</h2>
           <Image src={teamTsukamotoLogo} alt="Team Tsukamotoロゴ" />
         </div>
       </div>

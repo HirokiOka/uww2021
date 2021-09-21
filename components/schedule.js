@@ -46,6 +46,7 @@ export default function Schedule() {
                 </tr>
           ))}
         </table>
+        <p className='m-3'>上記は暫定のタイムテーブルであり、参加者数やオンライン発表の希望者数等により変更が生じる場合がございます。</p>
       </div>
     </div>
   );
