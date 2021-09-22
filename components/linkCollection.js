@@ -7,7 +7,7 @@ export default function LinkCollection() {
 
   return (
     <div className='text-center bg-gray-700 rounded m-2'>
-      <h1 className='text-2xl underline p-1'>Past Links</h1>
+      <h1 className='text-2xl underline p-1'>Links</h1>
       <div className='grid grid-cols-4 p-1'>
         {uwwYears.map((year, i) => (
           year < 2009
