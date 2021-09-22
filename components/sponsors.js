@@ -16,7 +16,7 @@ export default function Sponsors() {
           <Image src={teamTsukamotoLogo} alt="Team Tsukamotoロゴ" />
         </div>
       </div>
-      <p className='text-center text-xl'>本ワークショップは、科学技術振興機構戦略的創造研究推進事業(CREST)の成果報告会を兼ねています。</p>
+      <p className='text-center text-xl'>本ワークショップは、科学技術振興機構戦略的創造研究推進事業 (CREST) の成果報告会を兼ねています。</p>
     </div>
   );
 }

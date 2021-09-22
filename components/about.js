@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div>
       <h1 className='text-6xl text-center pt-16 py-2'>Ubiquitous Wearable Workshop 2021</h1>
-      <p className='text-center'>2021年12月19日(日)～20日(月)</p>
+      <p className='text-center'>2021年12月19日 (日) ～ 20日 (月) </p>
       <p className='text-center'>@兵庫県立 淡路夢舞台国際会議場</p>
       <p className='text-center'>〒656-2306 兵庫県淡路市夢舞台1番地</p>
       <div className='p-2'>
