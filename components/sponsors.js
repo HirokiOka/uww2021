@@ -1,7 +1,3 @@
-import Image from 'next/image';
-import teamTsukamotoLogo from '../public/img/teamtsukamoto-logo.png';
-import tsukakenLogo from '../public/img/tsukamototerada-logo.png';
-
 export default function Sponsors() {
   return (
     <div className='p-2 m-2'>
@@ -9,11 +5,11 @@ export default function Sponsors() {
       <div className='grid grid-cols-2'>
         <div className='text-center bg-gray-700 rounded p-3 m-2'>
           <h2 className='text-xl font-bold pb-2'>神戸大学大学院工学研究科 塚本・寺田研究室</h2>
-          <Image src={tsukakenLogo} alt="塚本寺田研究室ロゴ" />
+          <img className='mx-auto' src="/img/tsukaken.png" alt="塚本寺田研究室ロゴ" /> 
         </div>
         <div className='text-center bg-gray-700 rounded p-3 m-2'>
           <h2 className='text-xl font-bold py-2'>NPO法人ウェアラブルコンピュータ研究開発機構</h2>
-          <Image src={teamTsukamotoLogo} alt="Team Tsukamotoロゴ" />
+          <img className='mx-auto' src="/img/teamtsukamoto.png" alt="Team Tsukamotoロゴ" />
         </div>
       </div>
       <p className='text-center text-xl'>本ワークショップは、科学技術振興機構戦略的創造研究推進事業 (CREST) の成果報告会を兼ねています。</p>

@@ -14,7 +14,7 @@ export default function About() {
           <ul className='list-disc list-inside mx-3 p-3 bg-gray-500 rounded'>
             <li>A4原稿1枚記述</li>
             <li>一人15分程度のショートプレゼンテーション</li>
-            <li>参加者間の交流を目指したワークショップ</li>
+            <li>参加者間の交流を目指した1泊2日の合宿型ワークショップ</li>
             <li>実践的な情報処理技術に関する特別な企画などを含んだ「ナイトセッション」</li>
           </ul>
           <p className='pt-2'>※新型コロナウイルス (SARS-CoV-2) の状況によって、完全オンラインでの開催となる可能性もあります。</p>
