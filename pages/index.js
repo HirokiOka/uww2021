@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/header';
 import Registration from '../components/registration';
 import Deadline from '../components/deadline';
+import Download from '../components/download';
 import Schedule from '../components/schedule';
 import Organizers from '../components/organizers';
 import About from '../components/about';
@@ -22,7 +23,10 @@ export default function Home() {
         <div className='contents'>
           <About />
           <Registration />
-          <Deadline />
+          <div className='grid md:grid-cols-2 sm:grid-cols-none '>
+            <Deadline />
+            <Download />
+          </div>
           <div className='grid md:grid-cols-2 sm:grid-cols-none '>
             <Schedule />
             <Organizers />
