@@ -31,8 +31,8 @@ export default function Program({ dayOne, dayTwo }) {
             <p className=''>発表時間: 10分 (目安: 7分発表 + 2分質疑 + 1分転換) </p>
           </div>
           <div className='text-xl text-center md:mx-24 pt-4'>
-            <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-700 rounded underline" : "m-2 p-2 text-center bg-gray-900 rounded"}>12/19 (日)</button>
-            <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-900 rounded" : "m-2 p-2 text-center bg-gray-700 rounded underline"}>12/20 (月)</button>
+            <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-600 rounded underline" : "m-2 p-2 text-center bg-gray-900 rounded hover:bg-gray-700"}>12/19 (日)</button>
+            <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-900 rounded hover:bg-gray-700" : "m-2 p-2 text-center bg-gray-600 rounded underline"}>12/20 (月)</button>
           </div>
               {isDayOne ? (
               <>
@@ -56,7 +56,7 @@ export default function Program({ dayOne, dayTwo }) {
                               {p.coAuthors.map((ca, idx ,ary) => (
                                 <div key={idx}>
                                   {p.firstAuthor !== 'Adhe Rahmatullah Sugiharto' ? (
-                                    <p className='md:text-sm md:break-words text-xs'>{(ca.name.length > 4) && (ca.name.match(/a-z]/g !== null)) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
+                                    <p className='md:text-sm md:break-words text-xs'>{(ca.name.length > 4) && (ca.name.match(/[a-z]/g) === null) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
                                   ) : (
                                     <p className='text-center text-sm break-words'>{idx < ary.length-1 ? "" : "Shuhei Tsuchida (Kobe University), I Putu Alit Pawana (Department of Physical Medicine & Rehabilitation of Airlangga University, Dr. Soetomo General Academic Hospital), Tsutomu Terada, Masahiko Tsukamoto (Kobe University)"}</p>
                                   )}
@@ -93,7 +93,7 @@ export default function Program({ dayOne, dayTwo }) {
                             <div className='flex mb-1 justify-center'>
                               {p.coAuthors.map((ca, idx ,ary) => (
                                 <div key={idx}>
-                                  <p className='text-sm break-words'>{(ca.name.length > 4 && (ca.name.match(/a-z]/g !== null))) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
+                                  <p className='text-sm break-words'>{(ca.name.length > 4 && (ca.name.match(/[a-z]/g) === null)) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
                                 </div>
                               ))}
                             </div>
