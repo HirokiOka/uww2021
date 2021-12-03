@@ -11,7 +11,7 @@ export default function Schedule() {
       "time": "10:15 - 18:40",
       "event": "口頭発表セッション (途中休憩あり) ",
     }, {
-      "time": "19:00 - 20:30",
+      "time": "19:15 - 20:45",
       "event": "懇親会",
     }, {
       "time": "21:00 - 23:00",
