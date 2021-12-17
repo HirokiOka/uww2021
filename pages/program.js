@@ -37,7 +37,7 @@ export default function Program({ dayOne, dayTwo }) {
               {isDayOne ? (
               <>
                 {dayOne.map((s, i) => (
-                  <div className='my-4 mx-24 p-2 rounded bg-gray-700 justify-center' key={i}>
+                  <div className='my-4 md:mx-24 p-2 rounded bg-gray-700 justify-center' key={i}>
                     <h1 className='text-xl text-center'>{s.startTime} - {s.endTime}</h1>
                     <h1 className='text-2xl font-bold text-center'>{s.eventName}</h1>
                     {s.isSession ? (
@@ -52,7 +52,7 @@ export default function Program({ dayOne, dayTwo }) {
                                 <td><p className='text-center font-bold'>{p.firstAuthor} ({p.affiliation})</p></td>
                               </tr>
                             </table>
-                            <div className='flex mb-1 md:justify-center'>
+                            <div className='flex mb-1 justify-center'>
                               {p.coAuthors.map((ca, idx ,ary) => (
                                 <div key={idx}>
                                   {p.firstAuthor !== 'Adhe Rahmatullah Sugiharto' ? (
@@ -75,7 +75,7 @@ export default function Program({ dayOne, dayTwo }) {
             ) : (
               <>
                 {dayTwo.map((s, i) => (
-                  <div className='my-4 mx-24 p-2 rounded bg-gray-700 justify-center' key={i}>
+                  <div className='my-4 md:mx-24 p-2 rounded bg-gray-700 justify-center' key={i}>
                     <h1 className='text-xl text-center'>{s.startTime} - {s.endTime}</h1>
                     <h1 className='text-2xl font-bold text-center'>{s.eventName}</h1>
                     {s.isSession ? (
@@ -83,7 +83,7 @@ export default function Program({ dayOne, dayTwo }) {
                       <h2>座長: {s.sessionContent.chairman}</h2>
                         {s.sessionContent.presentations.map((p, j) => (
                           <ul className='list-disc list-inside m-2 p-2 bg-gray-600 rounded' key={j}>
-                            <li className='text-xl text-center'>{p.title}</li>
+                            <li className='md:text-xl text-center'>{p.title}</li>
                           <table className='m-auto'>
                             <tr>
                               <td><img src='./img/com.svg' width='24' height='24' /></td>
@@ -93,7 +93,7 @@ export default function Program({ dayOne, dayTwo }) {
                             <div className='flex mb-1 justify-center'>
                               {p.coAuthors.map((ca, idx ,ary) => (
                                 <div key={idx}>
-                                  <p className='text-sm break-words'>{(ca.name.length > 4 && (ca.name.match(/[a-z]/g) === null)) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
+                                  <p className='md:text-sm md:break-words text-xs'>{(ca.name.length > 4 && (ca.name.match(/[a-z]/g) === null)) ? ca.name.replaceAll(' ', '') : ca.name}{(ary[idx+1] && (ary[idx+1].affiliation === ca.affiliation)) ? '' : " (" + ca.affiliation + ")"}{idx < (ary.length-1) ? ',' : ''}&nbsp;</p>
                                 </div>
                               ))}
                             </div>

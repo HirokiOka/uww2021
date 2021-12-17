@@ -32,7 +32,7 @@ export default function Home() {
             <Organizers />
           </div>
           <Sponsors />
-          <h2 className='text-center text-xl'>E-mail: uww2021_org [at] ubi.eedept.kobe-u.ac.jp</h2>
+          <h2 className='text-center text-xl'>E-mail: uww2021org [at] ubi.eedept.kobe-u.ac.jp</h2>
           <LinkCollection />
 
         </div>
